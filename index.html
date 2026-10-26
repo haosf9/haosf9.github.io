@@ -1,0 +1,1295 @@
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KV2bPUwVeR3jCIFM",ck:"KV2bPUwVeR3jCIFM"})</script>
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>haosf-变态传奇SF以玩家为中心的变态传奇65535手游</title>
+  <meta name="keywords" content="haosf, 传奇SF, 传奇私服">
+  <meta name="description" content="haosf聚合平台，收录1.76复古、1.80/1.85合击、微变中变、单职业高爆等主流版本，提供新服速递、版本对比、选服攻略与新手教程。">
+  <link rel="canonical" href="#">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF4D4F'/%3E%3Cstop offset='1' stop-color='%23FF7A45'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='32' y='42' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='34' font-weight='800' fill='white' text-anchor='middle'%3E传%3C/text%3E%3C/svg%3E">
+
+  <style>
+/* ===========================================================
+   haosf · 官网样式
+   说明：纯静态、零外部依赖（不用 CDN），图标/插画用 CSS 绘制
+   =========================================================== */
+
+:root {
+  --primary: #FF4D4F;
+  --primary-dark: #D9363E;
+  --secondary: #FF7A45;
+  --gold: #FFC53D;
+  --dark: #1E1E2E;
+  --dark-gray: #4E4E5E;
+  --light-gray: #E5E5E5;
+  --light: #F5F5F7;
+  --white: #fff;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 8px 10px -6px rgba(0, 0, 0, .1);
+
+  --radius: 12px;
+  --radius-lg: 20px;
+  --content: 1200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Arial, system-ui, sans-serif;
+  color: var(--dark-gray);
+  background: var(--light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------------- 顶部广告位 ---------------- */
+.top-ad {
+  margin-top: 68px;              /* 让出固定导航栏高度，避免广告被导航遮住 */
+  padding: 12px 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--light-gray);
+  text-align: center;
+  overflow: hidden;
+}
+
+.top-ad iframe {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  max-width: 100%;
+}
+
+/* ---------------- 导航栏 ---------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+  transition: padding .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-md);
+  background: rgba(255, 255, 255, .96);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: padding .3s ease;
+}
+
+.navbar.scrolled .nav-inner {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(255, 77, 79, .35);
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: .5px;
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--dark-gray);
+  font-size: 16px;
+  transition: color .3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width .3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* 移动端菜单按钮 */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: 0;
+  padding: 6px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--dark-gray);
+  border-radius: 2px;
+  transition: background .3s ease;
+}
+
+.menu-toggle:hover span {
+  background: var(--primary);
+}
+
+.mobile-menu {
+  display: none;
+  background: #fff;
+  border-top: 1px solid var(--light-gray);
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-menu.hidden {
+  display: none;
+}
+
+.mobile-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.mobile-inner .nav-link {
+  padding: 8px 0;
+}
+
+/* ---------------- Hero ---------------- */
+.VPHome {
+  padding-top: 96px;
+}
+
+.VPHero {
+  padding: 40px 0 20px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.VPHero .name {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: 2px;
+  background: linear-gradient(100deg, var(--dark) 30%, var(--primary) 65%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHero .text {
+  margin: 18px 0 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--dark-gray);
+  max-width: 34em;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.VPButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform .3s ease, box-shadow .3s ease, background .3s ease, color .3s ease;
+}
+
+.VPButton.brand {
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 8px 18px rgba(255, 77, 79, .3);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(255, 77, 79, .38);
+}
+
+.VPButton.alt {
+  color: var(--primary);
+  background: #fff;
+  border: 1px solid var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.VPButton.alt:hover {
+  background: rgba(255, 77, 79, .06);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 34px;
+  margin-top: 36px;
+  padding-top: 26px;
+  border-top: 1px dashed var(--light-gray);
+  flex-wrap: wrap;
+}
+
+.hero-stats .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stats strong {
+  font-size: 1.6rem;
+  color: var(--dark);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-stats span {
+  font-size: .85rem;
+  color: #8a8a99;
+  margin-top: 2px;
+}
+
+/* Hero 右侧卡片 */
+.image-container {
+  position: relative;
+}
+
+.image-bg {
+  position: absolute;
+  inset: -18px -18px -18px -18px;
+  border-radius: 28px;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 77, 79, .18), transparent 60%),
+              radial-gradient(circle at 80% 80%, rgba(255, 122, 69, .20), transparent 60%);
+  filter: blur(2px);
+}
+
+.hero-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-xl);
+}
+
+.hero-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--light-gray);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2ecc71;
+  box-shadow: 0 0 0 4px rgba(46, 204, 113, .16);
+}
+
+.hero-card-title {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.hero-list {
+  margin: 14px 0 0;
+}
+
+.hero-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  font-size: .92rem;
+  color: var(--dark-gray);
+  border-bottom: 1px solid #f4f4f6;
+}
+
+.hero-list li:last-child {
+  border-bottom: 0;
+}
+
+.tag {
+  flex: 0 0 auto;
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: .2px;
+}
+
+.tag-hot {
+  color: #d4380d;
+  background: rgba(255, 77, 79, .12);
+}
+
+.tag-new {
+  color: #0958d9;
+  background: rgba(22, 119, 255, .12);
+}
+
+.tag-rec {
+  color: #135200;
+  background: rgba(82, 196, 26, .16);
+}
+
+.hero-card-foot {
+  margin-top: 12px;
+  font-size: .8rem;
+  color: #9a9aa8;
+  text-align: right;
+}
+
+/* ---------------- 通用板块 ---------------- */
+.VPFeatures {
+  padding: 34px 0;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 26px;
+}
+
+.items {
+  display: grid;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+
+.items:has(.grid-1) {
+  grid-template-columns: 1fr;
+}
+
+.items .grid-1 {
+  grid-column: 1 / -1;
+}
+
+/* 3 列网格：由 .grid-3 决定 */
+.VPFeatures .container .items {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.VPFeatures .container .items .grid-1 {
+  grid-column: 1 / -1;
+}
+
+.feature-card {
+  height: 100%;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  transition: transform .3s ease, box-shadow .3s ease;
+  border: 1px solid rgba(0, 0, 0, .02);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.feature-card .title {
+  position: relative;
+  padding-left: 14px;
+}
+
+.feature-card .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .35em;
+  width: 4px;
+  height: 1em;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+
+.details {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.details + .details {
+  margin-top: 15px;
+}
+
+/* ---------------- 版本对比表 ---------------- */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--light-gray);
+}
+
+.compare-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: .95rem;
+  background: #fff;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 14px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.compare-table thead th {
+  background: linear-gradient(135deg, rgba(255, 77, 79, .08), rgba(255, 122, 69, .10));
+  color: var(--dark);
+  font-weight: 700;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.compare-table tbody tr + tr td {
+  border-top: 1px solid #f2f2f5;
+}
+
+.compare-table tbody tr:hover td {
+  background: rgba(255, 77, 79, .04);
+}
+
+.compare-table td:first-child {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+/* ---------------- 页脚 ---------------- */
+.VPFooter {
+  margin-top: 40px;
+  background: #fff;
+  border-top: 1px solid var(--light-gray);
+  text-align: center;
+  padding: 30px 0 36px;
+}
+
+.VPFooter .copyright {
+  font-size: .9rem;
+  color: var(--dark-gray);
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.VPFooter .copyright strong {
+  color: var(--primary);
+}
+
+.disclaimer {
+  max-width: 860px;
+  margin: 14px auto 0;
+  font-size: .78rem;
+  line-height: 1.8;
+  color: #9a9aa8;
+}
+
+/* 友情链接样式 */
+.friend-links {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--light-gray);
+  font-size: .88rem;
+  color: var(--dark-gray);
+}
+
+.friend-links span {
+  color: var(--dark);
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.friend-links a {
+  color: var(--primary);
+  margin: 0 8px;
+  transition: color .3s ease;
+}
+
+.friend-links a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* ---------------- 响应式 ---------------- */
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu.hidden {
+    display: none;
+  }
+
+  .VPFeatures .container .items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHome {
+    padding-top: 84px;
+  }
+
+  .VPFeatures .container .items {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    gap: 22px;
+  }
+
+  .hero-stats strong {
+    font-size: 1.35rem;
+  }
+
+  .faq-title {
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------------- 底部大图展示区 ---------------- */
+.gallery-section {
+  padding: 8px 0 56px;
+}
+
+.gallery-sub {
+  max-width: 720px;
+  margin: -12px auto 30px;
+  text-align: center;
+  font-size: .95rem;
+  color: #6B6B7B;
+}
+
+.gallery-hero {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  margin-bottom: 22px;
+  background: var(--dark);
+}
+
+.gallery-hero img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 20, 32, .82) 0%, rgba(20, 20, 32, .25) 45%, rgba(20, 20, 32, 0) 70%);
+}
+
+.gallery-hero-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 26px 30px;
+  color: #fff;
+}
+
+.gallery-hero-caption h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+
+.gallery-hero-caption p {
+  font-size: .95rem;
+  color: rgba(255, 255, 255, .86);
+  max-width: 620px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--dark);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 20, 32, .8) 0%, rgba(20, 20, 32, .1) 55%, rgba(20, 20, 32, 0) 75%);
+}
+
+.gallery-item-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 18px 20px;
+  color: #fff;
+}
+
+.gallery-item-caption span {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--primary);
+  margin-bottom: 8px;
+}
+
+.gallery-item-caption h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 960px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-hero img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-section {
+    padding: 0 0 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-hero img {
+    height: 280px;
+  }
+
+  .gallery-item img {
+    height: 240px;
+  }
+
+  .gallery-hero-caption {
+    padding: 18px 20px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 导航栏 -->
+    <nav id="navbar" class="navbar">
+      <div class="container nav-inner">
+        <div class="brand">
+          <a href="#" class="brand-link">
+            <span class="brand-logo">新开</span>
+            <span class="brand-name">haosf</span>
+          </a>
+        </div>
+
+        <!-- 桌面导航 -->
+        <div class="nav-desktop">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#about" class="nav-link">平台简介</a>
+          <a href="#features" class="nav-link">核心优势</a>
+          <a href="#versions" class="nav-link">版本对比</a>
+          <a href="#guide" class="nav-link">选服攻略</a>
+        </div>
+
+        <!-- 移动端菜单按钮 -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="展开菜单">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- 移动端导航菜单 -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <div class="container mobile-inner">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#about" class="nav-link">平台简介</a>
+          <a href="#features" class="nav-link">核心优势</a>
+          <a href="#versions" class="nav-link">版本对比</a>
+          <a href="#guide" class="nav-link">选服攻略</a>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- ===== 顶部广告位（内嵌 haosf 广告） ===== -->
+    <div class="top-ad">
+      <DIV align=center><IFRAME src="https://www.haosf.ws/haosf.html" frameBorder=0 marginwidth=0 marginheight=0 scrolling=yes style="width:100%;height:2000px;" width=100% height=12000 scrolling=no ALLOWTRANSPARENCY="true"></IFRAME></DIV>
+    </div>
+
+    <div class="Layout">
+      <div class="VPContent is-home" id="VPContent">
+        <!-- Hero -->
+        <div id="home" class="VPHome">
+          <div class="VPHero has-image VPHomeHero">
+            <div class="container hero-inner">
+              <div class="main">
+                <h1 class="name">haosf</h1>
+
+                <p class="text">收录 1280+ 组新开haosf，覆盖 1.76 复古、1.80/1.85 合击、微变中变、单职业高爆等主流版本，每日同步开服信息。</p>
+                <div class="actions">
+                  <div class="action">
+                    <a class="VPButton medium brand" href="#versions">版本对比</a>
+                  </div>
+                  <div class="action">
+                    <a class="VPButton medium alt" href="#guide" rel="nofollow">选服攻略</a>
+                  </div>
+                </div>
+
+                <div class="hero-stats">
+                  <div class="stat"><strong>1280+</strong><span>收录服务器</span></div>
+                  <div class="stat"><strong>98.6%</strong><span>稳定运行率</span></div>
+                  <div class="stat"><strong>4.9/5</strong><span>玩家推荐评分</span></div>
+                </div>
+              </div>
+
+              <div class="image">
+                <div class="image-container">
+                  <div class="image-bg"></div>
+                  <div class="hero-card">
+                    <div class="hero-card-head">
+                      <span class="dot"></span>
+                      <span class="hero-card-title">今日新开 · 新服速递</span>
+                    </div>
+                    <ul class="hero-list">
+                      <li><span class="tag tag-hot">人气火爆</span>1.85 战神复古 · 无内功无合击</li>
+                      <li><span class="tag tag-new">今日首区</span>1.76 金币合击 · 装备保值</li>
+                      <li><span class="tag tag-rec">推荐</span>微变单职业 · 自动回收挂机</li>
+                      <li><span class="tag tag-hot">人气火爆</span>超变高爆 · 上线即战</li>
+                    </ul>
+                    <p class="hero-card-foot">每日 10:00 / 14:00 / 20:00 三档开服</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 平台简介 -->
+        <div id="about" class="VPFeatures VPHomeFeatures">
+          <h2 class="faq-title">haosf是什么？</h2>
+          <div class="container">
+            <div class="items">
+              <div class="grid-1 item">
+                <article class="box feature-card">
+                  <p class="details">
+                    haosf指的是由个人或团队自行架设、运营的《热血传奇》系列游戏服务器，版本、爆率、经验倍率和装备体系都由运营方自定义，因此比官方服务器更自由、节奏更快，也更贴近老玩家记忆中的那个玛法大陆。本平台是一个面向传奇玩家的新服信息聚合站，把每天分散在各个渠道的开服信息、版本说明和玩家口碑集中整理，方便玩家快速判断一个服值不值得投入时间。
+                  </p>
+                  <p class="details">
+                    平台收录的服务器覆盖 1.76 复古、1.80 战神、1.85 英雄合击、1.95 连击、微变 / 中变、沉默专属、单职业高爆等主流方向，并按照人气、开服时长、稳定率、爆率设定等维度打分排序。这里不开发也不运营任何游戏，只做信息归集与筛选参考，帮助玩家减少逐个试错的时间成本。
+                  </p>
+                  <p class="details">
+                    需要提醒的是，私服属于未经版权方授权的第三方服务器，玩家在其中的权益缺乏法律保障，也存在服务器关停、数据丢失、充值纠纷等风险。请在了解相关风险的前提下理性对待，谨慎充值，注意账号与个人信息安全。
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 核心优势 -->
+        <div id="features" class="VPFeatures VPHomeFeatures">
+          <h2 class="faq-title">haosf平台核心优势</h2>
+          <div class="container">
+            <div class="items">
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">1. 版本齐全</h3>
+                  <p class="details">
+                    从 1.76 纯复古到 1.95 连击，从微变、中变到超变单职业，主流版本收录齐全。每个服都标注了版本类型、经验倍率与爆率设定，不用进服试玩就能先判断是否符合自己的口味。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">2. 每日同步开服</h3>
+                  <p class="details">
+                    每天 10:00、14:00、20:00 三档更新开服列表，今日首区首服优先收录。开服信息、版本设定与活动排期实时同步，帮助玩家抓住新服前 24 小时的黄金发育期。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">3. 稳定优先筛选</h3>
+                  <p class="details">
+                    优先展示连续开服 30 天以上、在线人数稳定、更新节奏固定的服务器，尽量过滤掉三天两头重启、频繁换端的“快餐服”，降低换服带来的时间与账号损失。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">4. 参数化横向对比</h3>
+                  <p class="details">
+                    提供经验倍率、装备爆率、回收比例、开区间隔、在线人数等维度的对照表，让“haosf哪个好”这个问题有据可依，而不是只看广告打得多响。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">5. 新手教程与攻略</h3>
+                  <p class="details">
+                    从职业选择、升级路线、打宝地图到攻沙配合，整理成可执行的入门教程。对第一次接触私服的玩家来说，先看懂版本规则再进服，能少走很多弯路。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">6. 安全防坑提示</h3>
+                  <p class="details">
+                    汇总常见的交易骗术、虚假充值渠道与盗号链接特征，并提示合规风险。平台不提供任何充值入口，也不代收任何费用，帮助玩家避开明显不靠谱的服务器。
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 版本对比 -->
+        <div id="versions" class="VPFeatures VPHomeFeatures">
+          <h2 class="faq-title">主流版本参数对比</h2>
+          <div class="container">
+            <div class="items">
+              <div class="grid-1 item">
+                <article class="box feature-card">
+                  <p class="details" style="margin-bottom:18px;">
+                    下表按经验倍率、装备获取、回收比例，对当前主流haosf版本做横向对照。数据整理自各地发布站公开信息与玩家反馈，实际情况以游戏内设定为准。
+                  </p>
+                  <div class="table-wrap">
+                    <table class="compare-table">
+                      <thead>
+                        <tr>
+                          <th>版本类型</th>
+                          <th>经验倍率</th>
+                          <th>装备获取</th>
+                          <th>回收比例</th>
+                          <th>适合人群</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.76 复古</td>
+                          <td>1-3 倍</td>
+                          <td>全靠打宝</td>
+                          <td>中等</td>
+                          <td>怀旧老玩家</td>
+                        </tr>
+                        <tr>
+                          <td>1.80 战神</td>
+                          <td>5-20 倍</td>
+                          <td>打宝 + 活动</td>
+                          <td>较高</td>
+                          <td>喜欢 PK 对抗</td>
+                        </tr>
+                        <tr>
+                          <td>1.85 英雄合击</td>
+                          <td>10-30 倍</td>
+                          <td>打宝 + 副本</td>
+                          <td>较高</td>
+                          <td>组队配合玩家</td>
+                        </tr>
+                        <tr>
+                          <td>微变单职业</td>
+                          <td>50-100 倍</td>
+                          <td>任务 + 副本</td>
+                          <td>高</td>
+                          <td>上班族散人</td>
+                        </tr>
+                        <tr>
+                          <td>沉默专属</td>
+                          <td>20-50 倍</td>
+                          <td>专属剧情掉落</td>
+                          <td>中等</td>
+                          <td>探索型玩家</td>
+                        </tr>
+                        <tr>
+                          <td>高爆超变</td>
+                          <td>200 倍以上</td>
+                          <td>快速成型</td>
+                          <td>极高</td>
+                          <td>追求爽快节奏</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 选服攻略 -->
+        <div id="guide" class="VPFeatures VPHomeFeatures">
+          <h2 class="faq-title">haosf怎么选？三步找到适合你的服</h2>
+          <div class="container">
+            <div class="items">
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">01 先看版本与玩法</h3>
+                  <p class="details">
+                    先确认自己想玩的是复古、合击还是单职业，版本决定节奏与养成曲线。复古服慢节奏打宝，合击服强调英雄组合与 PK，单职业则把职业差异压缩，让散人也能靠时间追上进度。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">02 再查人气与稳定</h3>
+                  <p class="details">
+                    重点看在线人数、开服天数与更新频率。稳定的服通常有固定的活动排期，不会三天两头重启或换端；建议优先选择开服 30 天以上、晚间高峰在线人数可观的服务器。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">03 最后对比福利与爆率</h3>
+                  <p class="details">
+                    对比首充、回收比例、爆率公示与装备获取难度。核心是看谁能在公平与爽快之间找到平衡。爆率暗改、回收比例含糊、天天开新区的服，福利给得再高也要谨慎。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">新手入服准备</h3>
+                  <p class="details">
+                    下载登录器，核对客户端版本，把补丁放到正确目录，并把游戏目录加入杀毒软件白名单。多数“进不去游戏”的问题，其实只是版本不匹配或补丁路径错误。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">前期发育节奏</h3>
+                  <p class="details">
+                    1-20 级跟主线任务攒基础装备，20 级后组队刷蜈蚣洞、猪洞等经典地图，经验加成更高也更容易捡到装备。金币优先强化武器与衣服，药水够用即可，别乱花。
+                  </p>
+                </article>
+              </div>
+
+              <div class="grid-3 item">
+                <article class="box feature-card">
+                  <h3 class="title">防坑与安全提醒</h3>
+                  <p class="details">
+                    走游戏内交易渠道，警惕“低价出装备”“内部”等骗术；不要点击陌生链接领取礼包，不要出借账号。私服本身属于未经授权的第三方服务器，存在关服跑路风险，请谨慎充值。
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="VPFeatures VPHomeFeatures gallery-section">
+          <h2 class="faq-title">haosf · 视觉图鉴</h2>
+          <p class="gallery-sub">三职业并肩、沙城争锋——用最直观的画面，带你先看一眼经典传奇的热血战场。</p>
+          <div class="container">
+            <figure class="gallery-hero">
+ 
+              <figcaption class="gallery-hero-caption">
+                <h3>战士 · 一刀烈火的正面战场</h3>
+                <p>屠龙在手，近战之王。冲锋、野蛮、烈火剑法，硬碰硬的正面输出，永远是行会里最可靠的肉盾与先锋。</p>
+              </figcaption>
+            </figure>
+
+            <div class="gallery-grid">
+              <figure class="gallery-item">
+                <img src="https://gips2.baidu.com/it/u=3477719518,456081210&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=864&h=1152" alt="法师释放雷电魔法" loading="lazy">
+                <figcaption class="gallery-item-caption">
+                  <span>法师</span>
+                  <h4>雷电冰咆哮，远程控场</h4>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="https://gips2.baidu.com/it/u=278184158,1101685715&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" alt="道士召唤神兽" loading="lazy">
+                <figcaption class="gallery-item-caption">
+                  <span>道士</span>
+                  <h4>召唤神兽，攻守兼备</h4>
+                </figcaption>
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="https://gips3.baidu.com/it/u=2745007464,3686499998&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&wmo=5,5?w=1280&h=720" alt="沙巴克攻城战" loading="lazy">
+                <figcaption class="gallery-item-caption">
+                  <span>行会</span>
+                  <h4>沙巴克攻城，千军争锋</h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="VPFooter">
+      <div class="container">
+        <p class="copyright"><strong>按 Ctrl+D 键组合加入你的浏览器收藏夹，后续持续更新最新haosf网址</strong></p>
+        <p class="copyright">Copyright ©2026 haosf</p>
+        <div class="friend-links">
+<span>友情链接：</span>
+<a href="http://wdnf.ahu.org.cn" target="_blank"rel="noopener noreferrer">地下城</a>
+<a href="http://sf999.ahu.org.cn" target="_blank"rel="noopener noreferrer">sf999</a>
+<a href="http://zhaosf.ahu.org.cn" target="_blank"rel="noopener noreferrer">zhaosf</a>
+<a href="http://52345.ahu.org.cn" target="_blank"rel="noopener noreferrer">52345</a>
+<a href="http://30ok.ahu.org.cn" target="_blank"rel="noopener noreferrer">30ok</a>
+<a href="http://sf123.ahu.org.cn" target="_blank"rel="noopener noreferrer">sf123</a>
+<a href="http://haosf.ahu.org.cn" target="_blank"rel="noopener noreferrer">haosf</a>
+<a href="http://haosf.ahu.org.cn" target="_blank"rel="noopener noreferrer">haosf</a>
+<a href="https://wtcqsf.github.io/" target="_blank"rel="noopener noreferrer">网通传奇</a>
+<a href="https://dnfsfw.github.io/" target="_blank"rel="noopener noreferrer">地下城发布网</a>
+<a href="https://haosf.github.io/" target="_blank"rel="noopener noreferrer">haosf</a>
+<a href="https://lindsayharvey.github.io/" target="_blank"rel="noopener noreferrer">超变传奇</a>
+        </div>
+        <p class="disclaimer">本站仅为haosf展示站点，不开发、不运营任何游戏。私服为未经版权方授权的第三方服务器，请理性对待并注意财产安全。</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+/* ===========================================================
+   haosf · 单页交互脚本
+   功能：导航栏滚动收缩 / 滚动高亮当前板块 / 移动端菜单 / 平滑滚动
+   =========================================================== */
+
+(function () {
+  'use strict';
+
+  var navbar = document.getElementById('navbar');
+  var menuToggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll('#home, #about, #features, #versions, #guide')
+  );
+
+  /* ---------- 1. 滚动时导航栏收缩 + 高亮当前板块 ---------- */
+  function onScroll() {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    var currentId = '';
+    var offset = window.scrollY + 120;
+
+    sections.forEach(function (section) {
+      if (offset >= section.offsetTop) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    // 页面触底时强制高亮最后一个板块
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 8) {
+      currentId = sections.length ? sections[sections.length - 1].getAttribute('id') : currentId;
+    }
+
+    navLinks.forEach(function (link) {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ---------- 2. 移动端菜单开关 ---------- */
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  /* ---------- 3. 锚点平滑滚动（并顺手收起移动端菜单） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var href = this.getAttribute('href');
+      if (!href || href === '#') {
+        return;
+      }
+
+      var target = document.querySelector(href);
+      if (!target) {
+        return;
+      }
+
+      e.preventDefault();
+
+      if (mobileMenu) {
+        mobileMenu.classList.add('hidden');
+      }
+
+      var top = target.getBoundingClientRect().top + window.scrollY - 76;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+})();
+  </script>
+</body>
+</html>
